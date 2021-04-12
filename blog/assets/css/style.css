@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+
+h1, h2 {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+}
+
+main > .container-fluid {
+    background-color: #000;
+}
+
+.jumbotron {
+    background-image: url(../img/bg-hero.jpg);
+    background-size: cover;
+}
+
+.navbar-nav {
+    display: inline;
+    width: 100%
+    }
+
+nav img {
+    margin: 0 auto;
+    width: 70%;
+    display: block;
+}
+
+.bg-purple {
+	background-color: #6721b3;
+	padding:0;
+}
+
+
+footer ul, footer p {
+    display: inline-block;
+}
+
+footer ul li {
+    display: inline-block;
+}
+
+@media only screen and (min-width: 960px){
+
+.container-menu {
+	position: fixed;
+    width: 16.7%;
+    left: 0;
+}
+
+
+
+ }/* 960*/
