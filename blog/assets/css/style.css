@@ -3,10 +3,12 @@
 h1, h2 {
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
+    color: #ffd60d;
+    text-shadow: 1px 1px 30px rgb(0 0 0 / 60%);
 }
 
 main > .container-fluid {
-    background-color: #000;
+    background-color: #290658;
 }
 
 .jumbotron {
@@ -14,10 +16,23 @@ main > .container-fluid {
     background-size: cover;
 }
 
+.jumbotron img {
+    max-height: 200px;
+}
+
 .navbar-nav {
     display: inline;
     width: 100%
     }
+
+.parallax {
+    position: relative;
+    background-attachment: fixed;
+    background-position: center 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
 
 nav img {
     margin: 0 auto;
@@ -30,14 +45,40 @@ nav img {
 	padding:0;
 }
 
+.card {
+    border: none;
+}
 
 footer ul, footer p {
     display: inline-block;
 }
 
+#contacto ul {
+    list-style: none;
+}
+
+#contacto ul li i {
+    color: #ffd60d;
+}
+
+footer {
+    background-color: #292f3a;
+}
+
 footer ul li {
     display: inline-block;
 }
+
+footer a {
+    color: #fff;
+    margin: 0 .5rem;
+}
+
+/**/
+
+
+
+/**/
 
 @media only screen and (min-width: 960px){
 
@@ -45,8 +86,16 @@ footer ul li {
 	position: fixed;
     width: 16.7%;
     left: 0;
+    text-align: center;
 }
 
-
-
  }/* 960*/
+
+
+ @media only screen and (max-width: 560px) {
+
+    .jumbotron img {
+    max-height: 130px;
+}
+
+    }/* 560 */
