@@ -1,13 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
 
-h1, h2 {
+.home h1,
+.home h2 {
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
     color: #ffd60d;
     text-shadow: 1px 1px 30px rgb(0 0 0 / 60%);
 }
 
-main > .container-fluid {
+.post h1,
+.post h2 {
+    font-family: 'Oswald', sans-serif;
+}
+
+main>.container-fluid {
     background-color: #290658;
 }
 
@@ -23,7 +29,7 @@ main > .container-fluid {
 .navbar-nav {
     display: inline;
     width: 100%
-    }
+}
 
 .parallax {
     position: relative;
@@ -41,15 +47,16 @@ nav img {
 }
 
 .bg-purple {
-	background-color: #6721b3;
-	padding:0;
+    background-color: #6721b3;
+    padding: 0;
 }
 
 .card {
     border: none;
 }
 
-footer ul, footer p {
+footer ul,
+footer p {
     display: inline-block;
 }
 
@@ -75,27 +82,43 @@ footer a {
 }
 
 /**/
+.img-container img {
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
+    object-position: top;
+}
 
-
+.post section {
+    margin-bottom: -15px !important;
+}
 
 /**/
 
-@media only screen and (min-width: 960px){
+@media only screen and (min-width: 960px) {
 
-.container-menu {
-	position: fixed;
-    width: 16.7%;
-    left: 0;
-    text-align: center;
+    .container-menu {
+        position: fixed;
+        width: 16.7%;
+        left: 0;
+        text-align: center;
+    }
+
 }
 
- }/* 960*/
+/* 960*/
 
 
- @media only screen and (max-width: 560px) {
+@media only screen and (max-width: 560px) {
 
     .jumbotron img {
-    max-height: 130px;
+        max-height: 130px;
+    }
+
+    .img-container img {
+        height: 50vh;
+    }
+
 }
 
-    }/* 560 */
+/* 560 */
